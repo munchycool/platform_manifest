@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="munchy_rr"
+           fetch="https://github.com/munchycool/" 
+	   revision="oreo"
+           sync-j="6" />
+	
+  <remote  name="munchy_aqua"
+           fetch="https://github.com/munchycool/" 
+	   revision="a8.1.0"
+           sync-j="6" />
+	
+  <remote  name="munchy_du_wahoo"
+           fetch="https://github.com/munchycool/" 
+	   revision="du-rr-o"
+           sync-j="6" />	
+
+  <remote  name="munchy_nathan"
+           fetch="https://github.com/munchycool/" 
+	   revision="oreo-m2"
+           sync-j="6" />
+
+  <remove-project name="ResurrectionRemix/android_frameworks_base" />
+  <remove-project name="LineageOS/android_external_json-c" />
+ 
+  <project path="vendor/google" name="proprietary_vendor_google" remote="munchy_aqua" />
+  <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="munchy_aqua" />
+  <project path="device/google/wahoo" name="du_android_device_google_wahoo" remote="munchy_du_wahoo" />
+  <project path="device/google/walleye" name="device_google_walleye" remote="munchy_du_wahoo" />
+  <project path="kernel/google/wahoo" name="nathan_kernel_google_wahoo" remote="munchy_nathan" />
+  <project path="frameworks/base" name="rr_o_android_frameworks_base" remote="munchy_rr" />
+  <project path="hardware/qcom/msm8998" name="platform/hardware/qcom/msm8998" remote="aosp" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="platform/hardware/qcom/data/ipacfg-mgr" remote="aosp" />
+  <project path="external/bson" name="LineageOS/android_external_bson" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
+
+</manifest>
